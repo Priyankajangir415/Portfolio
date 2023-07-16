@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio's Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css">
+    
+  </head>
+  <body>
+    <h1>Portfolio's Survey Form</h1>
+    <p class="b">Thank you for taking the time to help me improve the platform.</p>
+<form method="post"  >
+  <div class="first">
+    <fieldset >
+      <label for="name">Name: <input type="text" name="Name" id="name" required placeholder="Enter your Name" ></label>
+      <label for="E-Mail">E-Mail: <br><input type="email" name="Email" required id="E-Mail" placeholder="Enter your E-Mail"> </label>
+      <label for="num">Contact No:<br> <input type="number" name="number" placeholder="Enter your Contact No." id="num" required> </label>
+      <label for="ages">Age: <br> <input type="number" name="age" required id="ages" placeholder="Enter your age"></label>
+      </div>
+      <div class="second">
+        <p>What role do you think best describes you?</p>
+      <select id="role" placeholder="Your current role" required name="role" class="currentrole" >
+      <option disabled selected value>(Select one)</option>
+      <option value="student">Student</option>
+      <option value="job">Full time job</option>
+      <option value="learner">Full time learner</option>
+      <option value="preferno">Prefer not to say</option>
+      <option value="others">Others</option>
+      </select>
+    </fieldset>
+    </div>
+    <div id="referrer">
+     <fieldset>
+       <p>Would you recommend this survey form to others?</p>
+       <label for="ofcourse"><input id="recommend" type="radio" value="definitely" name="yes" checked>Definitely</label>
+       <label for="maybe"><input type="radio" name="maybe" value="maybe" id="maybe">Maybe</label>
+       <label for="no"><input type="radio" name="notsure" value="notsure" id="notsure">Not sure</label>
+     </fieldset>
+    </div>
+    <div id="third">
+      <fieldset>
+        <p>What would you like to see improved?</p>
+        <label><input type="checkbox">Front-end project</label>
+        <label><input type="checkbox">Back-end project</label>
+        <label><input type="checkbox">Data Visualization</label>
+        <label><input type="checkbox">Challenges</label>
+        <label><input type="checkbox">Open source community</label>
+        <label><input type="checkbox">Gitter help rooms</label>
+        <label><input type="checkbox">Videos</label>
+        <label><input type="checkbox">City Meetups</label>
+        <label><input type="checkbox">Wiki</label>
+        <label><input type="checkbox">Forum</label>
+        <label><input type="checkbox">Additional courses</label>
+      </fieldset>
+    </div>
+      <div>
+        <p>Any comments or suggestions?</p>
+        <textarea class="bio" placeholder="Type your suggestions here..." value="bio" id="comments"></textarea><br>
+        <button type="submit" id="submit" class="sub">Submit</button>
+</form>
+  </body>
+  </html>
